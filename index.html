@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social media managment | in ajmer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="overlay">
+  <!-- navbar section -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.jfif" alt="Logo">
+      </a>
+      <!-- Offcanvas button for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Offcanvas menu for mobile -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Gallery">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Know More <i
+                  class="fa fa-caret-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Get Connect button -->
+          <button type="button" class="btn btn-outline-primary get-connect" onclick="connectUser()">Get Connect</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section Start -->
+  <section class="hero-section d-flex align-items-center m-2" id="Home">
+    <div class="container">
+      <div class="row">
+        <!-- Text and Details -->
+        <div class="col-lg-6 hero-text">
+          <h1 class="hero-title">Boost Your Brand with Our Social Media Marketing Services</h1>
+          <p class="hero-description">
+            We help your business grow by creating an impactful presence across all social platforms.
+            Engage your audience, build your brand, and watch your success soar.
+          </p>
+          <!-- Social Media Icons -->
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          <!-- CTA Buttons -->
+          <div class="cta-buttons mt-4">
+            <a href="#services" class="btn btn-primary btns">Our Services</a>
+            <a href="#contact" class="btn btn-outline-light">Get In Touch</a>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="col-lg-6 hero-image">
+          <img src="images/side-removebg-preview.png" alt="Hero Image" class="img-fluid animated-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section class="hero-section m-2" id="About">
+    <div class="container text-center">
+      <h2>Who We Are</h2>
+      <p>We are a cutting-edge social media marketing company dedicated to helping brands grow and engage their audience
+        through innovative digital strategies. Our mission is to transform your online presence into a powerful
+        marketing tool.</p>
+
+      <h3>Our Core Values</h3>
+      <ul class="list-unstyled">
+        <li><strong>Innovation:</strong> We constantly explore new ideas and technologies to keep our strategies ahead
+          of the curve.</li>
+        <li><strong>Integrity:</strong> We believe in transparency and honesty in all our client interactions.</li>
+        <li><strong>Customer Focus:</strong> Our clients' success is our priority, and we tailor our services to meet
+          their unique needs.</li>
+      </ul>
+      <section class="mb-2">
+        <div class="container text-center">
+          <h2 class="animated fadeIn">Meet Our Team</h2>
+          <p class="animated fadeIn delay-1s">Our talented team is the backbone of our company. Each member brings
+            unique skills and expertise to help you achieve your marketing goals.</p>
+
+          <div class="row mt-4">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card animated fadeIn delay-2s">
+                <img src="images/bg1.jpg" alt="Team Member 1" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">Founder & CEO</p>
+                  <p class="card-text">John leads the team with a vision for success and a commitment to innovation.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card animated fadeIn delay-3s">
+                <img src="images/bg1.jpg" alt="Team Member 2" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Jane Smith</h5>
+                  <p class="card-text">Marketing Director</p>
+                  <p class="card-text">With a keen eye for strategy, Jane ensures our campaigns hit the mark.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card animated fadeIn delay-4s">
+                <img src="images/bg1.jpg" alt="Team Member 3" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Emily Johnson</h5>
+                  <p class="card-text">Content Strategist</p>
+                  <p class="card-text">Emily crafts compelling content that resonates with audiences and drives
+                    engagement.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card animated fadeIn delay-5s">
+                <img src="images/bg1.jpg" alt="Team Member 4" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Michael Brown</h5>
+                  <p class="card-text">Graphic Designer</p>
+                  <p class="card-text">Michael creates stunning visuals that capture attention and tell a story.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card animated fadeIn delay-6s">
+                <img src="images/bg1.jpg" alt="Team Member 5" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Sarah Davis</h5>
+                  <p class="card-text">Social Media Manager</p>
+                  <p class="card-text">Sarah engages with our audience on social platforms, fostering community and
+                    connection.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card animated fadeIn delay-7s">
+                <img src="images/bg1.jpg" alt="Team Member 6" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">David Wilson</h5>
+                  <p class="card-text">SEO Specialist</p>
+                  <p class="card-text">David optimizes our content to ensure maximum visibility and search engine
+                    ranking.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h3>Why Choose Us?</h3>
+      <p>With a track record of successful campaigns and satisfied clients, we bring expertise and creativity to every
+        project.</p>
+
+      <h3>Our Journey</h3>
+      <p>Since our inception in 2020, we've worked with numerous brands to enhance their social media presence and
+        achieve remarkable results.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="hero-section m-2" id="Services">
+    <div class="container text-center">
+      <h2 class="animated fadeIn">Our Services</h2>
+      <p class="animated fadeIn delay-1s">We offer a range of services to help your business thrive in the digital
+        landscape.</p>
+
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card animated fadeIn delay-2s">
+            <div class="icon">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <h5 class="service-title">Social Media Management</h5>
+            <p class="service-description">We manage your social media profiles to enhance engagement and reach.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card animated fadeIn delay-3s">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h5 class="service-title">Digital Marketing Strategy</h5>
+            <p class="service-description">Our team creates tailored marketing strategies for maximum impact.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card animated fadeIn delay-4s">
+            <div class="icon">
+              <i class="fas fa-pen-fancy"></i>
+            </div>
+            <h5 class="service-title">Content Creation</h5>
+            <p class="service-description">We produce high-quality content that resonates with your audience.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card animated fadeIn delay-5s">
+            <div class="icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h5 class="service-title">Community Engagement</h5>
+            <p class="service-description">We foster community interaction to build loyalty and trust.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card animated fadeIn delay-6s">
+            <div class="icon">
+              <i class="fas fa-ad"></i>
+            </div>
+            <h5 class="service-title">Paid Advertising</h5>
+            <p class="service-description">We optimize your ads to reach your target audience effectively.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card animated fadeIn delay-7s">
+            <div class="icon">
+              <i class="fas fa-laptop"></i>
+            </div>
+            <h5 class="service-title">Web development</h5>
+            <p class="service-description">We provide detailed analytics to measure the success of your campaigns.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="hero-section m-2" id="Gallery">
+    <div class="container text-center">
+      <h2 class="animated fadeIn">Our Projects</h2>
+      <p class="animated fadeIn delay-1s">Explore our portfolio of successful projects and campaigns.</p>
+
+      <div class="row mt-4 gallery-slider">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gallery-item animated fadeIn delay-2s">
+            <img src="images/hero.jpg" alt="Gallery Image 1" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gallery-item animated fadeIn delay-3s">
+            <img src="images/hero.jpg" alt="Gallery Image 2" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gallery-item animated fadeIn delay-4s">
+            <img src="images/hero.jpg" alt="Gallery Image 3" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gallery-item animated fadeIn delay-5s">
+            <img src="images/hero.jpg" alt="Gallery Image 4" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gallery-item animated fadeIn delay-6s">
+            <img src="images/hero.jpg" alt="Gallery Image 5" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gallery-item animated fadeIn delay-7s">
+            <img src="images/hero.jpg" alt="Gallery Image 6" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section hero-section m-2" id="Contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10 text-center">
+          <h2 class="animated fadeIn">Get in Touch</h2>
+          <p class="animated fadeIn delay-1s">Feel free to reach out to us for any queries or support!</p>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-6 col-md-8">
+          <div class="contact-form animated fadeInUp delay-2s">
+            <form id="contactForm" method="get">
+              <div class="form-group">
+                <input type="text" class="form-control animated zoomIn delay-3s my-2" id="name" name="name"
+                  placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control animated zoomIn delay-4s my-2" id="email" name="email"
+                  placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control animated zoomIn delay-5s my-2" id="message" name="msg"
+                  placeholder="Your Message" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block animated pulse delay-6s">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-6 col-md-8 text-center">
+          <p class="animated fadeInUp">Follow Us on Social Media</p>
+          <div class="social-icons">
+            <a href="#" class="animated bounceIn delay-7s"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="animated bounceIn delay-8s"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="animated bounceIn delay-9s"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="animated bounceIn delay-10s"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section hero-section">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-heading animated fadeInLeft">About Us</h4>
+          <p class="footer-text animated fadeInLeft delay-1s">
+            We are a leading social media marketing company, helping businesses build their online presence with
+            effective strategies and creative campaigns.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-heading animated fadeInUp">Quick Links</h4>
+          <ul class="footer-links animated fadeInUp delay-1s">
+            <li><a href="#Home" class="animated zoomIn delay-2s">Home</a></li>
+            <li><a href="#About" class="animated zoomIn delay-3s">About</a></li>
+            <li><a href="#Services" class="animated zoomIn delay-4s">Services</a></li>
+            <li><a href="#Gallery" class="animated zoomIn delay-5s">Projects</a></li>
+            <li><a href="#Contact" class="animated zoomIn delay-5s">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="col-lg-4 col-md-12">
+          <h4 class="footer-heading animated fadeInRight">Follow Us</h4>
+          <div class="social-icons animated fadeInRight delay-1s">
+            <a href="#" class="animated bounceIn delay-2s"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="animated bounceIn delay-3s"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="animated bounceIn delay-4s"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="animated bounceIn delay-5s"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="footer-bottom animated fadeInUp">&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
